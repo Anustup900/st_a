@@ -38,7 +38,7 @@ def main():
                 with cols[i]:
                     st.text(experiment)
                     img = Image.open(image_path)
-                    st.image(img, caption=base_name, use_column_width=True)
+                    st.image(img, caption=base_name, use_container_width=True)
     else:
         st.error("Folder does not exist. Please check the folder path.")
 
